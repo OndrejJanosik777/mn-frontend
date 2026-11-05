@@ -1,4 +1,4 @@
-import main_png from '../p00-playground/assets/main.png';
+import main_png from '../p00-playground/assets/main.webp';
 
 const PLAYGROUND = () => {
   return (
