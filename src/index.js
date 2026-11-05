@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import reportWebVitals from './reportWebVitals';
 // impoting pages
-import PLAYGROUND from './pages/p00-playground/index.js';
+import P00_PLAYGROUND from './pages/p00-playground/index.js';
 import P01_WELCOME from './pages/p01-welcome/index.js';
 import P02_ABOUT_ME from './pages/p02-about-me/index.js';
 import P03_TERMIN_RESERVATION from './pages/p03-termin-reservation/index.js';
@@ -16,7 +16,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<PLAYGROUND />} />
+        <Route path="/" element={<P00_PLAYGROUND />} />
         <Route path="/welcome" element={<P01_WELCOME />} />
         <Route path="/about-me" element={<P02_ABOUT_ME />} />
         <Route path="/termin-reservation" element={<P03_TERMIN_RESERVATION />} />
