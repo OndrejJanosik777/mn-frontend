@@ -1,16 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import reportWebVitals from './reportWebVitals';
 // impoting pages
 import PLAYGROUND from './pages/p00-playground/index.js';
+import P01_WELCOME from './pages/p01-welcome/index.js';
+import P02_ABOUT_ME from './pages/p02-about-me/index.js';
+import P03_TERMIN_RESERVATION from './pages/p03-termin-reservation/index.js';
+// importing styles
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <PLAYGROUND />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<PLAYGROUND />} />
+        <Route path="/welcome" element={<P01_WELCOME />} />
+        <Route path="/about-me" element={<P02_ABOUT_ME />} />
+        <Route path="/termin-reservation" element={<P03_TERMIN_RESERVATION />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
