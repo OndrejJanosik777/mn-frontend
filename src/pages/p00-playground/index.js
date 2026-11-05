@@ -4,7 +4,7 @@ const PLAYGROUND = () => {
   return (
     <div>
         <img style={{ width: '100%', height: 'auto' }} src={main_png} alt="main" />
-        <h1 >... I love you :* ...</h1>
+        <h1 style={{ textAlign: 'center' }}>... I love you :* ...</h1>
     </div>
 
     );  
