@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './app/store/store.js';
+
 
 import reportWebVitals from './reportWebVitals';
 // impoting pages
@@ -13,7 +16,8 @@ import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <Provider store={store}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<P00_PLAYGROUND />} />
@@ -22,7 +26,7 @@ root.render(
         <Route path="/termin-reservation" element={<P03_TERMIN_RESERVATION />} />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
